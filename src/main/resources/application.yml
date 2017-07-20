@@ -1,0 +1,9 @@
+sb-adal-graph:
+  user: <your_aad_user>
+  password: <your_aad_password>
+  tenantId: <your_tenant_id>
+  clientId: <your_client_id>
+  base.url: https://graph.microsoft.com/v1.0/me
+  sendMailEndpoint: ${sb-adal-graph.base.url}/sendMail
+  authority: https://login.microsoftonline.com/${sb-adal-graph.tenantId}
+  resource: https://graph.microsoft.com/
